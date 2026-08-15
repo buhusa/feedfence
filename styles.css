@@ -105,7 +105,7 @@ img { display: block; }
 .country-preview-grid { display: grid; margin-top: 13px; padding: 11px; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px 11px; border: 1px solid #2c414e; border-radius: 10px; background: #080f14; }.country-preview-grid span { display: grid; min-width: 0; align-items: center; grid-template-columns: 11px 17px minmax(0,1fr); gap: 5px; color: #d7dee3; font-size: 8px; }.country-preview-grid i { display: grid; width: 10px; height: 10px; place-items: center; border-radius: 2px; background: #159de7; color: white; font-size: 7px; font-style: normal; }.country-preview-grid b { font-size: 11px; font-weight: 400; }.country-control-preview .preview-caption { padding: 9px 0 0; }
 
 .section-heading { max-width: 740px; margin: 0 auto; text-align: center; }
-.section-heading h2, .details h2, .store-strip h2 { margin: 0; font-size: clamp(38px,4.5vw,58px); line-height: 1.08; letter-spacing: -.045em; }
+.section-heading h2, .privacy-section h2, .store-strip h2 { margin: 0; font-size: clamp(38px,4.5vw,58px); line-height: 1.08; letter-spacing: -.045em; }
 .section-heading > p:last-child { max-width: 620px; margin: 20px auto 0; color: var(--muted); font-size: 17px; }
 .install-section { padding-bottom: 125px; }
 .install-steps { display: grid; margin: 58px 0 0; padding: 0; grid-template-columns: repeat(3,1fr); gap: 18px; list-style: none; }
@@ -117,13 +117,8 @@ img { display: block; }
 .install-steps code, .brave-note code { padding: 2px 6px; border: 1px solid #2e4351; border-radius: 5px; background: #0b141b; color: #80cdfa; font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; }
 .brave-note { margin: 20px 0 0; color: #768792; font-size: 12px; text-align: center; }
 
-.details { display: grid; padding: 115px 72px; align-items: stretch; grid-template-columns: 1fr 1fr; gap: 70px; border-top: 1px solid rgba(41,56,69,.6); }
-.details h2 { font-size: clamp(35px,4vw,52px); }
-.release-notes ul { display: grid; margin: 35px 0 0; padding: 0; gap: 19px; list-style: none; }
-.release-notes li { display: flex; gap: 13px; }
-.release-notes li > span { display: grid; flex: 0 0 23px; width: 23px; height: 23px; margin-top: 2px; place-items: center; border-radius: 50%; background: rgba(110,216,170,.1); color: var(--green); font-size: 10px; }
-.release-notes strong { font-size: 14px; }
-.release-notes p { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
+.privacy-section { padding: 115px 72px; border-top: 1px solid rgba(41,56,69,.6); }
+.privacy-section h2 { font-size: clamp(35px,4vw,52px); }
 .privacy-card { padding: 34px; border: 1px solid #304a5c; border-radius: 23px; background: radial-gradient(circle at 88% 12%, rgba(118,85,247,.13), transparent 35%), linear-gradient(145deg, #10212c, #111923); }
 .shield { display: grid; width: 48px; height: 48px; margin-bottom: 29px; place-items: center; border: 1px solid #3f6982; border-radius: 15px; background: #102c3d; color: #69c8ff; font-size: 21px; transform: rotate(180deg); }
 .privacy-card h2 { font-size: 34px; }
@@ -160,7 +155,7 @@ img { display: block; }
   .release-card { width: min(620px,100%); }
   .workflow { padding-inline: 0; grid-template-columns: 1fr; gap: 55px; }.workflow-copy { max-width: 650px; }.settings-preview { width: min(650px,100%); }
   .country-control { padding-inline: 0; grid-template-columns: 1fr; gap: 55px; }.country-control-copy { max-width: 650px; }.country-control-preview { width: min(700px,100%); }
-  .details { padding-inline: 0; gap: 38px; }
+  .privacy-section { padding-inline: 0; }
 }
 
 @media (max-width: 760px) {
@@ -177,7 +172,7 @@ img { display: block; }
   .region-preview-grid, .country-preview-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .install-steps { grid-template-columns: 1fr; }
   .install-steps li { min-height: 220px; }
-  .details { padding: 90px 0; grid-template-columns: 1fr; }
+  .privacy-section { padding: 90px 0; }
   .support-strip { padding: 28px; align-items: flex-start; grid-template-columns: auto minmax(0,1fr); }
   .support-button { width: 100%; grid-column: 1 / -1; }
   .store-strip { padding: 29px; align-items: flex-start; flex-direction: column; gap: 24px; }
