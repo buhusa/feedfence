@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#080d12">
   <title>FeedFence on GitHub — Manual beta</title>
   <link rel="icon" href="assets/icon-fence-gate.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -82,26 +82,69 @@
       </div>
     </section>
 
-    <section class="how-it-works shell" id="how-it-works" aria-labelledby="how-title">
-      <div class="how-copy">
+    <section class="workflow shell" id="how-it-works" aria-labelledby="workflow-title">
+      <div class="workflow-copy">
         <p class="eyebrow">Simple by design</p>
-        <h2 id="how-title">Set it once.<br>Scroll with less noise.</h2>
-        <p>FeedFence adds a practical layer of control to X while keeping every decision visible and reversible.</p>
+        <h2 id="workflow-title">Set it once.<br>Scroll with less noise.</h2>
+        <ol class="workflow-steps">
+          <li><span>1</span><div><strong>Choose your filters</strong><p>Select locations, regions, flags, or specific profile bio phrases.</p></div></li>
+          <li><span>2</span><div><strong>Browse X as usual</strong><p>FeedFence checks only the account rows near your view and spaces requests carefully.</p></div></li>
+          <li><span>3</span><div><strong>Stay in control</strong><p>Reveal a hidden item, allowlist its account, or explicitly block it with one click.</p></div></li>
+        </ol>
       </div>
-      <ol class="how-steps">
-        <li>
-          <span>1</span>
-          <div><strong>Choose your filters</strong><p>Select locations, regions, flags, or specific profile bio phrases.</p></div>
-        </li>
-        <li>
-          <span>2</span>
-          <div><strong>Browse X as usual</strong><p>FeedFence checks only the account rows near your view and spaces requests carefully.</p></div>
-        </li>
-        <li>
-          <span>3</span>
-          <div><strong>Stay in control</strong><p>Reveal a hidden item, allowlist its account, or explicitly block it with one click.</p></div>
-        </li>
-      </ol>
+      <div class="settings-preview" aria-label="FeedFence settings preview with example data">
+        <div class="settings-head">
+          <div class="mini-brand"><img src="assets/icon-fence-gate.svg" alt="" width="36" height="36"><span><strong>FeedFence</strong><small>Shape your X feed by account location or profile bio.</small></span></div>
+          <span class="enabled-pill"><i aria-hidden="true">✓</i> Filtering enabled</span>
+        </div>
+        <div class="settings-body">
+          <div class="preview-info"><strong>Feed filtering</strong><span>Choose which locations or bio phrases you want hidden.</span></div>
+          <div class="location-preview-card">
+            <div class="settings-title"><span><strong>Blocked locations</strong><small>Selecting an X region automatically selects all of its countries below.</small></span><span class="location-actions"><b>98 selected</b><em>Clear all</em></span></div>
+            <p class="preview-label">X regions</p>
+            <div class="region-preview-grid">
+              <div class="region-preview selected"><i>✓</i><span class="region-symbol">◎</span><strong>Africa</strong><small>56</small><b>›</b></div>
+              <div class="region-preview selected"><i>✓</i><span class="region-symbol">◎</span><strong>Middle East and North Africa</strong><small>20</small><b>›</b></div>
+              <div class="region-preview selected"><i>✓</i><span class="region-symbol">◎</span><strong>South Asia</strong><small>8</small><b>›</b></div>
+              <div class="region-preview mixed"><i>−</i><span class="region-symbol">◎</span><strong>Southeast Asia</strong><small>11</small><b>›</b></div>
+              <div class="region-preview mixed"><i>−</i><span class="region-symbol">◎</span><strong>East Asia and Pacific</strong><small>16</small><b>›</b></div>
+              <div class="region-preview"><i></i><span class="region-symbol">◎</span><strong>Western Europe</strong><small>17</small><b>›</b></div>
+            </div>
+            <div class="countries-disclosure"><strong>Countries</strong><span>95 of 249 selected</span><b>›</b></div>
+          </div>
+        </div>
+        <p class="preview-caption">Product preview with example selections</p>
+      </div>
+    </section>
+
+    <section class="country-control shell" aria-labelledby="country-control-title">
+      <div class="country-control-copy">
+        <p class="eyebrow">Precise when you want it</p>
+        <h2 id="country-control-title">Whole regions—or every country.</h2>
+        <p>Select a complete X region in one click, then open it to adjust countries individually. Overlapping regions and your manual choices remain visible and editable.</p>
+        <ul class="detail-points">
+          <li><span aria-hidden="true">✓</span> Select all countries in a region</li>
+          <li><span aria-hidden="true">✓</span> Fine-tune individual countries</li>
+          <li><span aria-hidden="true">✓</span> See full and partial selection states</li>
+        </ul>
+      </div>
+      <div class="country-control-preview" aria-label="FeedFence Africa country selection preview with example data">
+        <div class="region-detail-head">
+          <span class="region-detail-symbol">◎</span>
+          <span><strong>Africa</strong><small>56 of 56 countries selected</small></span>
+          <b><i aria-hidden="true">✓</i> Whole region selected</b>
+        </div>
+        <div class="region-detail-info">Choose countries individually below. Selecting the whole region also matches accounts whose “Account based in” value is the region name.</div>
+        <div class="country-preview-grid">
+          <span><i>✓</i><b>🇩🇿</b> Algeria</span><span><i>✓</i><b>🇦🇴</b> Angola</span><span><i>✓</i><b>🇧🇯</b> Benin</span>
+          <span><i>✓</i><b>🇧🇼</b> Botswana</span><span><i>✓</i><b>🇧🇫</b> Burkina Faso</span><span><i>✓</i><b>🇧🇮</b> Burundi</span>
+          <span><i>✓</i><b>🇨🇲</b> Cameroon</span><span><i>✓</i><b>🇨🇻</b> Cape Verde</span><span><i>✓</i><b>🇨🇫</b> Central African Republic</span>
+          <span><i>✓</i><b>🇹🇩</b> Chad</span><span><i>✓</i><b>🇰🇲</b> Comoros</span><span><i>✓</i><b>🇨🇮</b> Côte d’Ivoire</span>
+          <span><i>✓</i><b>🇩🇯</b> Djibouti</span><span><i>✓</i><b>🇨🇩</b> DR Congo</span><span><i>✓</i><b>🇪🇬</b> Egypt</span>
+          <span><i>✓</i><b>🇪🇹</b> Ethiopia</span><span><i>✓</i><b>🇬🇦</b> Gabon</span><span><i>✓</i><b>🇳🇬</b> Nigeria</span>
+        </div>
+        <p class="preview-caption">Representative preview · the full region contains 56 countries</p>
+      </div>
     </section>
 
     <section class="install-section shell" id="install" aria-labelledby="install-title">
@@ -110,7 +153,7 @@
         <h2 id="install-title">Install FeedFence manually.</h2>
         <p>You only need Chrome’s built-in extensions page. No installer and no FeedFence account are required.</p>
       </div>
-      <ol class="steps">
+      <ol class="install-steps">
         <li>
           <span class="step-number">1</span>
           <div class="step-icon" aria-hidden="true">↓</div>
