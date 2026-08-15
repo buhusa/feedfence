@@ -1,0 +1,29 @@
+FeedFence Proprietary Software License
+
+Copyright © 2026 FeedFence. All rights reserved.
+
+Permission is granted to download and use an unmodified official release of
+FeedFence solely for personal, non-commercial use.
+
+Except for that limited permission, no rights are granted to copy, modify,
+adapt, merge, publish, distribute, sublicense, sell, rent, host, or create
+derivative works from FeedFence or any part of it. You may not remove or alter
+copyright, attribution, trademark, or proprietary notices.
+
+Reverse engineering, decompilation, or disassembly is prohibited to the
+maximum extent permitted by applicable law. This restriction does not limit
+rights that cannot lawfully be excluded.
+
+Use of GitHub functionality that permits viewing or forking a public
+distribution repository does not grant any additional license to the software
+or its contents.
+
+FeedFence is provided "as is", without warranties of any kind, express or
+implied, including warranties of merchantability, fitness for a particular
+purpose, and non-infringement. To the maximum extent permitted by applicable
+law, FeedFence and its contributors will not be liable for any claim, damages,
+or other liability arising from the software or its use.
+
+FeedFence is an independent project and is not affiliated with X Corp.
+
+Official website: https://feedfence.buhussy.xyz

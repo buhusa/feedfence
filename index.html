@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download and manually install the FeedFence browser extension beta from GitHub.">
+  <meta name="theme-color" content="#080d12">
+  <title>FeedFence on GitHub — Manual beta</title>
+  <link rel="icon" href="assets/icon-fence-gate.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="https://feedfence.buhussy.xyz" aria-label="FeedFence website">
+      <img src="assets/icon-fence-gate.svg" alt="" width="42" height="42">
+      <span>FeedFence</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#install">Installation</a>
+      <a href="#release-notes">Release notes</a>
+      <a href="https://feedfence.buhussy.xyz/privacy/">Privacy</a>
+      <a href="#support">Support</a>
+      <a class="nav-cta" href="#download">Download beta</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>GitHub beta · Version 2.3.3</p>
+        <h1 id="hero-title">A calmer X feed.<br><span>Available to try now.</span></h1>
+        <p class="hero-lede">Install FeedFence manually while the Chrome Web Store release is being prepared. The beta uses the same private, local-first filtering—without analytics, advertising, or a FeedFence account.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#download">Download beta <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="#install">Installation guide</a>
+        </div>
+        <ul class="trust-list" aria-label="Key product details">
+          <li><span aria-hidden="true">✓</span> Local-first</li>
+          <li><span aria-hidden="true">✓</span> No tracking</li>
+          <li><span aria-hidden="true">✓</span> Free beta</li>
+        </ul>
+      </div>
+
+      <aside class="release-card" id="download" aria-labelledby="release-title">
+        <div class="release-topline">
+          <span class="latest-pill">Latest beta</span>
+          <span class="release-date">Version 2.3.3</span>
+        </div>
+        <div class="release-product">
+          <img src="assets/icon-fence-gate.svg" alt="" width="70" height="70">
+          <div>
+            <p>FeedFence for Chrome &amp; Brave</p>
+            <h2 id="release-title">Manual beta download</h2>
+          </div>
+        </div>
+        <p class="release-copy">Download the extension package, unzip it, and load the folder from your browser’s extensions page.</p>
+        <a class="button primary download-button" href="https://github.com/buhusa/feedfence/releases/latest/download/feedfence-2.3.3.zip" data-release-download data-release-asset="feedfence-2.3.3.zip">
+          <span class="download-icon" aria-hidden="true">↓</span>
+          Download FeedFence 2.3.3
+        </a>
+        <div class="file-meta">
+          <span>ZIP · 73 KB</span>
+          <span>Proprietary</span>
+          <span>Manifest V3</span>
+        </div>
+        <div class="checksum">
+          <span>SHA-256</span>
+          <code title="cd3a4d95e9488e36143ea2a14ddbfb4eb8315c66e6d4cecf03e2667d1080775e">cd3a4d95e948…80775e</code>
+        </div>
+        <p class="preview-note" data-preview-note>Download from the official FeedFence GitHub Release.</p>
+      </aside>
+    </section>
+
+    <section class="notice shell" aria-label="Manual installation notice">
+      <span class="notice-icon" aria-hidden="true">i</span>
+      <div>
+        <strong>This is a manual beta installation.</strong>
+        <p>Chrome will not update this version automatically. New GitHub releases must be downloaded and loaded manually until FeedFence is available through the Chrome Web Store.</p>
+      </div>
+    </section>
+
+    <section class="install-section shell" id="install" aria-labelledby="install-title">
+      <div class="section-heading">
+        <p class="eyebrow">Three quick steps</p>
+        <h2 id="install-title">Install FeedFence manually.</h2>
+        <p>You only need Chrome’s built-in extensions page. No installer and no FeedFence account are required.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-number">1</span>
+          <div class="step-icon" aria-hidden="true">↓</div>
+          <h3>Download and unzip</h3>
+          <p>Download the ZIP above and extract it to a folder you want to keep.</p>
+        </li>
+        <li>
+          <span class="step-number">2</span>
+          <div class="step-icon" aria-hidden="true">⚙</div>
+          <h3>Open extensions</h3>
+          <p>Enter <code>chrome://extensions</code> and enable <strong>Developer mode</strong>.</p>
+        </li>
+        <li>
+          <span class="step-number">3</span>
+          <div class="step-icon" aria-hidden="true">＋</div>
+          <h3>Load the folder</h3>
+          <p>Select <strong>Load unpacked</strong> and choose the extracted FeedFence folder.</p>
+        </li>
+      </ol>
+      <p class="brave-note">Using Brave? Open <code>brave://extensions</code> and follow the same steps.</p>
+    </section>
+
+    <section class="details shell" id="release-notes" aria-labelledby="details-title">
+      <div class="release-notes">
+        <p class="eyebrow">Release notes</p>
+        <h2 id="details-title">What’s in 2.3.3</h2>
+        <ul>
+          <li><span aria-hidden="true">✓</span><div><strong>Faster account checks</strong><p>Visible accounts are prioritized while requests remain deliberately paced.</p></div></li>
+          <li><span aria-hidden="true">✓</span><div><strong>Safer rate-limit handling</strong><p>FeedFence learns from temporary limits and pauses before spending unavailable requests.</p></div></li>
+          <li><span aria-hidden="true">✓</span><div><strong>More reliable controls</strong><p>Location indicators and account actions stay clear across timeline and profile layouts.</p></div></li>
+        </ul>
+      </div>
+      <aside class="privacy-card">
+        <div class="shield" aria-hidden="true">⌂</div>
+        <p class="eyebrow">Privacy before installation</p>
+        <h2>Your feed stays yours.</h2>
+        <p>FeedFence processes X profile data locally and uses your signed-in X session only for its filtering features. No analytics, advertising, or developer-operated backend.</p>
+        <a href="https://feedfence.buhussy.xyz/privacy/">Read the Privacy Policy <span aria-hidden="true">→</span></a>
+      </aside>
+    </section>
+
+    <section class="support-strip shell" id="support" aria-labelledby="support-title">
+      <div class="support-mark" aria-hidden="true">♡</div>
+      <div class="support-copy">
+        <p class="eyebrow">Optional support</p>
+        <h2 id="support-title">Keep FeedFence independent.</h2>
+        <p>FeedFence stays free, private, and free of ads. If it improves your X experience, you can leave an optional crypto tip using your preferred network.</p>
+      </div>
+      <a class="button secondary support-button" href="https://feedfence.buhussy.xyz/support/">Open TipJar <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="store-strip shell" aria-labelledby="store-title">
+      <div>
+        <p class="eyebrow">Prefer automatic updates?</p>
+        <h2 id="store-title">Chrome Web Store release in preparation.</h2>
+        <p>Once approved, the official store version will provide the simplest installation and update experience.</p>
+      </div>
+      <button class="button secondary" type="button" disabled>Release in preparation</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="brand" href="https://feedfence.buhussy.xyz">
+        <img src="assets/icon-fence-gate.svg" alt="" width="36" height="36">
+        <span>FeedFence</span>
+      </a>
+      <p>A private, local-first feed filter for X.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://feedfence.buhussy.xyz">Website</a>
+      <a href="https://feedfence.buhussy.xyz/privacy/">Privacy</a>
+      <a href="#support">Support</a>
+      <a href="#release-notes">Release notes</a>
+      <a href="LICENSE.txt">License</a>
+    </div>
+    <p class="legal-note">© 2026 FeedFence. FeedFence is an independent project and is not affiliated with X Corp.</p>
+  </footer>
+  <script src="release-link.js"></script>
+</body>
+</html>
