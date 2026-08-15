@@ -73,6 +73,17 @@ img { display: block; }
 .notice strong { display: block; font-size: 14px; }
 .notice p { margin: 5px 0 0; color: #9e9c8d; font-size: 12px; }
 
+.how-it-works { display: grid; padding: 5px 70px 125px; align-items: center; grid-template-columns: .82fr 1.18fr; gap: 95px; }
+.how-copy h2 { margin: 0; font-size: clamp(38px,4.5vw,58px); line-height: 1.08; letter-spacing: -.045em; }
+.how-copy > p:last-child { max-width: 450px; margin: 21px 0 0; color: var(--muted); font-size: 14px; }
+.how-steps { margin: 0; padding: 27px 29px; border: 1px solid #2e4351; border-radius: 21px; background: linear-gradient(145deg, rgba(18,30,40,.9), rgba(12,19,26,.9)); list-style: none; }
+.how-steps li { position: relative; display: flex; gap: 17px; padding: 0 0 28px; }
+.how-steps li:last-child { padding-bottom: 0; }
+.how-steps li:not(:last-child)::after { position: absolute; top: 34px; bottom: 4px; left: 15px; width: 1px; content: ""; background: #2b414f; }
+.how-steps li > span { position: relative; z-index: 1; display: grid; flex: 0 0 31px; width: 31px; height: 31px; place-items: center; border: 1px solid #3b6075; border-radius: 50%; background: #102331; color: #65c6ff; font-size: 11px; font-weight: 800; }
+.how-steps strong { font-size: 16px; }
+.how-steps p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+
 .section-heading { max-width: 740px; margin: 0 auto; text-align: center; }
 .section-heading h2, .details h2, .store-strip h2 { margin: 0; font-size: clamp(38px,4.5vw,58px); line-height: 1.08; letter-spacing: -.045em; }
 .section-heading > p:last-child { max-width: 620px; margin: 20px auto 0; color: var(--muted); font-size: 17px; }
@@ -127,6 +138,8 @@ img { display: block; }
   .hero { min-height: auto; padding-top: 70px; grid-template-columns: 1fr; gap: 55px; }
   .hero-copy { max-width: 760px; }
   .release-card { width: min(620px,100%); }
+  .how-it-works { padding-inline: 0; grid-template-columns: 1fr; gap: 45px; }
+  .how-copy { max-width: 650px; }
   .details { padding-inline: 0; gap: 38px; }
 }
 
@@ -140,6 +153,7 @@ img { display: block; }
   .hero h1 { font-size: clamp(45px,13vw,66px); }
   .hero-lede { font-size: 16px; }
   .notice { margin-bottom: 88px; padding: 21px; }
+  .how-it-works { padding-bottom: 95px; }
   .steps { grid-template-columns: 1fr; }
   .steps li { min-height: 220px; }
   .details { padding: 90px 0; grid-template-columns: 1fr; }
@@ -162,6 +176,7 @@ img { display: block; }
   .release-product img { width: 58px; height: 58px; }
   .release-product h2 { font-size: 20px; }
   .checksum { align-items: flex-start; flex-direction: column; }
+  .how-steps { padding: 23px 21px; }
   .steps li { padding: 24px; }
   .privacy-card { padding: 26px; }
   .support-strip { grid-template-columns: 1fr; }
